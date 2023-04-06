@@ -37,6 +37,30 @@ body{
     font-weight: 500;
 
 }
+.quiz header .question_text{
+    font-size: 18px;
+    font-weight: 300;
+}
 .quiz section{
     padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+.quiz section .option_list{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .option_list .option{
+    
+    background: rgb(16, 16, 105);
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    margin-right: 10px;
+}
+section .option_list .option:last-child{
+    margin-right: 0px;
 }
