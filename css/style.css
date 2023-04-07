@@ -12,14 +12,16 @@ body{
     
 }
 .quiz{
+   
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.9);
     width: 550px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    
 }
 .quiz header{
     height: 100px;
@@ -36,6 +38,13 @@ body{
     font-size: 20px;
     font-weight: 500;
 
+}
+.quiz header .number_text span{
+    display: flex;
+    user-select: none;
+}
+.quiz header .number_text span p:first-child{
+    padding-left: 5px;
 }
 .quiz header .question_text{
     font-size: 18px;
@@ -60,7 +69,91 @@ section .option_list .option{
     text-align: center;
     color: #fff;
     margin-right: 10px;
+    transition: all 0.3s ease;
+}
+section .option_list .option:hover{
+    color: #fff;
+    background: rgb(15, 15, 173);
+   
 }
 section .option_list .option:last-child{
     margin-right: 0px;
+}
+.quiz footer{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+footer .next_btn{
+    height: 25px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    background: rgb(35, 35, 190);
+    border: 1px solid #5851b6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+footer .next_btn:hover{
+    background:rgb(5, 5, 126)
+}
+.result{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    background: #fff;
+    border-radius: 5px;
+    width: 450px;
+    padding: 20px 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.result .comlete_text{
+    font-size: 18px;
+    font-weight: 500;
+}
+.result .score_text span{
+    display: flex;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 17px;
+
+}
+.result .score_text span p{
+    font-weight: 600;
+    padding: 0 4px;
+}
+.result .restart{
+    display: flex;
+    margin: 10px 0;
+}
+.result .restart .restart_btn{
+    height: 25px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    background: rgb(35, 35, 190);
+    border: 1px solid #5851b6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.result .restart .restart_btn:hover{
+    background:rgb(5, 5, 126)
 }
