@@ -8,8 +8,10 @@ body{
     background-color: #0f87b6;
     background-image: linear-gradient(135deg, #09807a 0%, #28168f 100%);
     font-family: 'Poppins', sans-serif;
-   
-    
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
 }
 .quiz{
    
@@ -18,6 +20,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
     width: 550px;
+    
     background: #fff;
     border-radius: 5px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
@@ -105,6 +108,7 @@ footer .next_btn:hover{
     background:rgb(5, 5, 126)
 }
 .result{
+    
     position: absolute;
     top: 50%;
     left: 50%; 
@@ -120,6 +124,7 @@ footer .next_btn:hover{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    
 }
 .result .comlete_text{
     font-size: 18px;
