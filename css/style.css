@@ -50,14 +50,16 @@ body{
     padding-left: 5px;
 }
 .quiz header .question_text{
+    padding-top: 10px;
     font-size: 18px;
     font-weight: 300;
 }
 .quiz section{
-    padding: 25px 30px 20px 30px;
+    padding: 0px 30px 20px 30px;
     background: #fff;
 }
 .quiz section .option_list{
+    
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -67,7 +69,7 @@ body{
 section .option_list .option{
     
     background: rgb(16, 16, 105);
-    width: 70px;
+    width: 32%;
     border-radius: 5px;
     text-align: center;
     color: #fff;

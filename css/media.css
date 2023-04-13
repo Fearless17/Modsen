@@ -17,4 +17,17 @@
         width: 100%;
     }
 }
+@media (max-width: 526px){
+   
+    .quiz section .option_list{
+        flex-direction: column;
+    }
+    section .option_list .option{
+        width: 70%;
+    }
+    section .option_list .option:not(:last-child){
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+}
 
