@@ -1,12 +1,12 @@
 @media (max-width: 570px){
-   
+    
     .quiz{
-        width: 100%;
-        
+        width: calc(100% - 20px);
+        margin-right: 10px;
        
     }
 }
-@media (max-width: 395px){
+@media (max-width: 520px){
     .quiz header .question_text{
         text-align: center;
     }
@@ -24,10 +24,11 @@
     }
     section .option_list .option{
         width: 70%;
+        margin-top: 10px;
     }
     section .option_list .option:not(:last-child){
         margin-right: 0px;
-        margin-bottom: 5px;
+        
     }
 }
 
