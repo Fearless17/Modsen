@@ -46,6 +46,8 @@ function showQuestions(index){
     else {
         
         que_tag = '<span>' + questions[index].question + '</span>';
+        multiple_answersTag = '<span></span>';
+        multiple_answers.innerHTML = multiple_answersTag;
     }
         let option_tag =   '<div class="option"><span>' + questions[index].options[0] + '</span></div>'
                         +  '<div class="option"><span>' + questions[index].options[1] + '</span></div>' 

@@ -11,10 +11,11 @@
         text-align: center;
     }
 }
-@media (max-width: 415px){
+@media (max-width: 460px){
    
     .result{
-        width: 100%;
+        width: calc(100% - 20px);
+        margin-right: 10px;
     }
 }
 @media (max-width: 526px){
