@@ -1,32 +1,32 @@
 body{
-    background-color: black;
+    background-color: #121212;
     background-image: none;
 }
 
 .start_btn button{
     color: #fff;
-    background: black;
+    background: #121212;
     border: 1px solid #fff;
    
 }
 .quiz{
-    background: black;
+    background: #121212;
     border: 1px solid #fff;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 
 .quiz header{
-    background: black;  
+    background: #121212;  
 }
 header .time .time_sec{
     color: #d4611e;
 }
 .quiz section{
-    background: black;
+    background: #121212;
 }
 section .option_list .option{    
-    background: black;
+    background: #121212;
     border: 1px solid #fff;
     color: #fff;  
 }
@@ -36,36 +36,36 @@ section .option_list .option:hover{
    
 }
 .option_list .option.correct{
-    color: black;
+    color: #121212;
     background: #1eda49;
     border-color: #c3e6cb;
 }
 .option_list .option.correct-unelected{
-    color: black;
+    color: #121212;
     background: #1eda49;
     border-color: #c3e6cb;
 }
 .option_list .option.incorrect{
-    color: black;
+    color: #121212;
     background: #e91f30;
     border-color: #f5c6cb;
 }
 footer .next_btn{  
     color: #fff;
-    background: black;
+    background: #121212;
     border: 1px solid #fff;
 }
 footer .next_btn:hover{
     background:rgb(5, 5, 126)
 }
 .result{
-    background: black;
+    background: #121212;
     color: #fff;   
     border: 1px solid #fff; 
 }
 .result .restart .restart_btn{ 
     color: #fff;    
-    background: black;
+    background: #121212;
     border: 1px solid #fff;
 }
 .result .restart .restart_btn:hover{
