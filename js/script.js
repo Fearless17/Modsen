@@ -4,21 +4,24 @@ const next_btn = quiz.querySelector(".next_btn");
 const option_list = document.querySelector(".option_list");
 const result = document.querySelector(".result");
 const restart_btn = result.querySelector(".restart .restart_btn");
-
+const time_count = quiz.querySelector(".time .time_sec");
 
 
 start_btn.onclick = () => {
     quiz.classList.add("activeQuiz");
     showQuestions(0);
+    queCounter(1);
+    startTimer(15);
 }
 
 restart_btn.onclick = () => {
     window.location.reload();
 }
+let timeValue = 15;
 let count_que = 0;
 let numb_que = 1;
 let score = 0;
-
+let counter;
 
 next_btn.onclick = () => {
     if(count_que < questions.length - 1){
@@ -26,6 +29,8 @@ next_btn.onclick = () => {
         numb_que++;
         showQuestions(count_que);
         queCounter(numb_que);
+        clearInterval(counter);
+        startTimer(timeValue);
         next_btn.style.display = "none";
     }
     else {
@@ -64,7 +69,7 @@ function showQuestions(index){
 }
 
 function optionSelected(answer){
-    
+    clearInterval(counter);
     let userAns = answer.textContent; 
     let correctAns = questions[count_que].answer;
     let allOptions = option_list.children.length;
@@ -124,4 +129,32 @@ function queCounter(index){
     const number_text = quiz.querySelector(".number_text");
     let totalQueTag = '<span>Question<p>' + index + '</p>/<p>' + questions.length + '</p></span>'
     number_text.innerHTML = totalQueTag;
+}
+
+
+
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        time_count.textContent = time;
+        time--;
+        if(time < 0){
+            
+            clearInterval(counter);
+            let correctAns = questions[count_que].answer;
+            let allOptions = option_list.children.length;
+            for (let i = 0; i < allOptions; i++) {
+                if(correctAns.includes(option_list.children[i].textContent)){
+                    option_list.children[i].setAttribute("class", "option correct-unelected");
+                   
+                }
+               
+            }
+            for(let i = 0; i < allOptions; i++){
+                option_list.children[i].classList.add("disabled");
+            }
+                next_btn.style.display = "block";
+        }
+    }
+    
 }

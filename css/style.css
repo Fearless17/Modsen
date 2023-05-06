@@ -13,6 +13,16 @@ body{
     background-size: cover;
     margin: 0 auto;
 }
+.theme{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    
+}
+.theme svg{
+    cursor: pointer;
+}
 .start_btn{
     position: absolute;
     
@@ -59,13 +69,32 @@ body{
 }
 .quiz header{
     height: 100px;
-    margin-top: 20px;
+    margin-top: 15px;
     background: #fff;
     display: flex;
     align-items: center; 
     flex-direction: column;
     justify-content: center;
     border-radius: 5px 5px 0 0;
+}
+.quiz header .time{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+header .time .time_text{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    user-select: none;
+}
+header .time .time_sec{
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+    color: rgb(236, 8, 65);
 }
 .quiz header .multiple_answers span{
     font-size: 20px;
@@ -94,7 +123,7 @@ body{
 }
 .quiz section .option_list{
     
-    padding-top: 10px;
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;

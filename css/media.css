@@ -6,9 +6,13 @@
        
     }
 }
+
 @media (max-width: 520px){
     .quiz header .question_text{
         text-align: center;
+    }
+    .quiz header .time{
+        margin-top: 20px;
     }
 }
 @media (max-width: 460px){
