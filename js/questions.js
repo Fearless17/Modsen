@@ -1,4 +1,4 @@
-let questions = [
+const questions = [
     {
         ques_numb: 1,
         question: "How many planets are in the solar system?",
